@@ -65,12 +65,23 @@ public class HRManager extends Employee {
 
     @Override
     public String toString() {
-        return "HRManager{" +
-                "name=" + getName() +
-                "salary=" + getSalary() +
+        return "HrManager{" +
+                "id=" + super.getId() +
+                "name=" + super.getName() +
+                "salary=" + super.getSalary() +
                 "juniorDevelopers=" + Arrays.toString(juniorDevelopers) +
                 ", midDevelopers=" + Arrays.toString(midDevelopers) +
                 ", seniorDevelopers=" + Arrays.toString(seniorDevelopers) +
                 '}';
     }
+
+   /* @Override
+    public String toString() {
+        return "HrManager{" +
+                "super=" + super.toString() +
+                "juniorDevelopers=" + Arrays.toString(juniorDevelopers) +
+                ", midDevelopers=" + Arrays.toString(midDevelopers) +
+                ", seniorDevelopers=" + Arrays.toString(seniorDevelopers) +
+                '}';
+    }*/
 }
